@@ -4,13 +4,15 @@ const app = new Vue (
 
 
         data : {
-            message : ''
+            message : '',
+            imgUrl : ''
         },
 
 
         methods : {
             resetInput : function () {
                 this.message = null;
+                this.imgUrl = null;
             }
         }
     }
