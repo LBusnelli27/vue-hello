@@ -31,9 +31,12 @@
         <div class="container-fluid">
             <div class="row p-5">
                 <div class="col-8 col-offset-2">
-                    <input class="me-3" type="text" v-model="message">
-                    <button class="btn btn-danger" @click="resetInput">Reset</button>
+                    <input class="me-3 mb-5" type="text" placeholder="Scrivi qualcosa" v-model="message">
+                    <button class="btn btn-danger" @click="resetInput">Reset All</button>
+
+                    <input class="d-block" type="text" placeholder="Inserisci URL dell'immagine" v-model="imgUrl">
                     <h2>{{ message }}</h2>
+                    <img :src="imgUrl"> 
                 </div>
             </div>
         </div>
